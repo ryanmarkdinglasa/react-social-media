@@ -7,7 +7,8 @@ if (!process.contextIsolated) {
 //
 try {
   contextBridge.exposeInMainWorld('context', {
-    //to do
+    //get the OS language
+    locale: navigator.language
   })
 } catch (error) {
   console.error(error)

@@ -11,20 +11,20 @@
   html,
   body {
     height: 100%;
-   -webkit-app-region: drag;
+    --webkit-app-region: drag;
     background: #303030;
     font-family: 'Mono', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    --webkit-font-smoothing: antialiased;
     color: white;
     overflow: hidden;
   }
   
   header {
-    --webkit-app-region: drag;
+    -webkit-app-region: drag;
   }
 
   button {
-    --webkit-app-region: no-drag;
+    -webkit-app-region: no-drag;
   }
 
   ::-webkit-scrollbar {
