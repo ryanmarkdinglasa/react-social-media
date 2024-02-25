@@ -1,6 +1,5 @@
-import { LuFileSignature } from "react-icons/lu"
-
 import { ActionButton, ActionButtonProps } from '@/components'
+import { LuFileSignature } from "react-icons/lu"
 
 export const NewNoteButton = ({..._props}: ActionButtonProps) => {
     return (
