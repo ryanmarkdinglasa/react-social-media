@@ -1,9 +1,9 @@
 {
-  "name": "note-mark",
+  "name": "innosoft-boilerplate",
   "version": "1.0.0",
-  "description": "An Electron application with React and TypeScript",
+  "description": "Innosoft software boilerplate",
   "main": "./out/main/index.js",
-  "author": "example.com",
+  "author": "Mark Dinglasa",
   "homepage": "https://electron-vite.org",
   "scripts": {
     "format": "prettier --write .",
@@ -24,6 +24,8 @@
     "@electron-toolkit/preload": "^3.0.0",
     "@electron-toolkit/utils": "^3.0.0",
     "@mdxeditor/editor": "^2.9.0",
+    "@mui/icons-material": "^5.15.11",
+    "@mui/styled-engine": "^5.15.11",
     "jotai": "^2.6.5",
     "postcss-import": "^16.0.1"
   },
