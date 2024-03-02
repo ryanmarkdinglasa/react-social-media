@@ -7,9 +7,18 @@ const App = () => {
       <RootLayout>
         <Content  className="bg-zinc-900/50 flex justify-center items-center "  style={{background:'var()'}}> 
           <>
-            <div className='shadow-2xl rounded-full flex justify-center items-center ' style={{borderRadius:'20px',background:'#FFF', width:'450px', height: '450px'}} >
-                <div className='flex justify-center items-center  '>
-                  <img src={Logo} style={{ width:'400px', height: '400px'}}/>
+            <div className='shadow-2xl rounded-full flex justify-center items-center ' style={{borderRadius:'20px',background:'#FFF', width:'500px', height: '500px'}} >
+                <div className=' '>
+                  <div className="flex justify-center text-primary mt-3">
+                    <span className="text-primary font-bold text-xl"> Cebu Innosoft Solutions Inc.</span>
+                  </div>
+                  <div className="flex justify-center ">
+                    <span className="text-slate-500 "> Boilerplate © 2024 | v1.0.0</span>
+                  </div>
+                  <div>
+                    <img src={Logo} style={{ width:'400px', height: '400px'}}/>
+                  </div>
+                 
                 </div>
             </div>
           </>

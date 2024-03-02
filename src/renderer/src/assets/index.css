@@ -108,6 +108,14 @@
     }
   }
 
+  .text-primary{
+    color:var(--primary);
+  }
+
+  .text-secondary{
+    color:var(--secondary);
+  }
+
   .close-app:hover{
     background:rgba(255, 0, 0, 0.9);
     transition: 0.5 ease-in-out;
