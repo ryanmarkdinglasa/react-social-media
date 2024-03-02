@@ -1,6 +1,5 @@
-export * from './ActionButton'
-export * from './DeleteNoteButton'
-export * from './NewNoteButton'
-export * from './NotePreview'
-export * from './NotePreviewList'
+/* 
+    EXPORT ALL BUTTONS HERE
+*/
+export * from './CloseAppButton';
 

@@ -1,13 +1,14 @@
-import { electronApp, is, optimizer } from '@electron-toolkit/utils'
-import { BrowserWindow, app, ipcMain, shell } from 'electron'
-import { join } from 'path'
-import icon from '../../resources/icon.png?asset'
+import { electronApp, is, optimizer } from '@electron-toolkit/utils';
+import { BrowserWindow, app, ipcMain, shell } from 'electron';
+import path, { join } from 'path';
+import icon from '../../resources/icon.png?asset';
 
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 900,
     height: 670,
+    icon: path.join(__dirname, '../../favicon.ico'),
     show: false,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
@@ -17,6 +18,7 @@ function createWindow(): void {
     title: 'Note-Mark',
     visualEffectState: 'active',
     titleBarStyle: 'hidden',
+    
     trafficLightPosition: { x: 15, y: 10 },
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
@@ -59,7 +61,10 @@ app.whenReady().then(() => {
 
   // IPC test
   ipcMain.on('ping', () => console.log('pong'))
-
+  // Handle the close-app message from the renderer process
+  ipcMain.on('close-app', () => {
+    app.quit();
+  });
   createWindow()
 
   app.on('activate', function () {

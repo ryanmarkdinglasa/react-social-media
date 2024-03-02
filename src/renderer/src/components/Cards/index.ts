@@ -1,1 +1,3 @@
-export * from './MovieCard';
+/* 
+    EXPORT ALL CARDS HERE
+*/
