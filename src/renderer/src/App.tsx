@@ -1,5 +1,5 @@
 import { Content, DraggableTopBar, RootLayout } from '@/components'
-import Logo from './assets/images/icons.jpg'
+import Logo from './assets/images/white-icon.jpg'
 const App = () => {
   return (
     <>
