@@ -27,6 +27,7 @@
     "@mui/icons-material": "^5.15.11",
     "@mui/styled-engine": "^5.15.11",
     "@syncfusion/ej2": "^24.2.9",
+    "@syncfusion/ej2-base": "^24.2.8",
     "@syncfusion/ej2-react-calendars": "^24.2.9",
     "@syncfusion/ej2-react-charts": "^24.2.9",
     "@syncfusion/ej2-react-dropdowns": "^24.2.9",
@@ -37,6 +38,7 @@
     "@syncfusion/ej2-react-richtexteditor": "^24.2.9",
     "@syncfusion/ej2-react-schedule": "^24.2.8",
     "jotai": "^2.6.5",
+    "npm": "^10.5.0",
     "postcss-import": "^16.0.1",
     "react-router-dom": "^6.22.2",
     "react-tooltip": "^5.26.3"

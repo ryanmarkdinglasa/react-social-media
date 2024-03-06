@@ -25,6 +25,19 @@ export const SideBar = ({ className, children, ..._props }: ComponentProps<'asid
     </>
   )
 }
+//Platform's Sidebar
+export const Navbar = ({ className, children, ..._props }: ComponentProps<'nav'>) => {
+  return (
+    <>
+      <nav
+        className={twMerge('w-[100vw] h-[50px] overflow-awuto border-red', className)}
+        {..._props}
+      >
+        {children}
+      </nav>
+    </>
+  )
+}
 
 //Content of the SideBar
 export const Content = forwardRef<HTMLDivElement, ComponentProps<'div'>>(
